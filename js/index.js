@@ -48,6 +48,7 @@
  let color = document.querySelector('.slider');
  let secondSlider = document.querySelector('.slider-div--second');
 
+
  function slider() {
      for (let i = 0; i < images.length; i++) {
          images[i].classList.add('opacity0');
