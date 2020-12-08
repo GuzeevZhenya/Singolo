@@ -15,7 +15,8 @@
                 <div class="logo">
                     <a href="#">Singolo<span>*</span></a>
                 </div>
-                <nav class="header__menu">
+                <button class="header__button header__button--open" type="button" aria-expanded="false">Кнопка</button>
+                <nav class="header__menu header__menu--open">
                     <ul class="header__menu-list">
                         <li class="header__menu-item header__menu-item--selected" href="#">
                             <a class="header__menu-link header__menu-link--selected" href="#">Home</a>
@@ -60,8 +61,9 @@
 
                     <ul class="services__list">
                         <li class="services__item">
-                            <img src="assets/services/pen.png" alt="pen" />
+
                             <div class="service__item-wrapper">
+                                <img src="assets/services/pen.png" alt="pen" />
                                 <h2 class="services__item-title">Custom Design</h2>
                                 <p class="services__item-text">
                                     Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
@@ -69,8 +71,8 @@
                             </div>
                         </li>
                         <li class="services__item">
-                            <img src="assets/services/bulb.png" alt="bulb" />
                             <div class="service__item-wrapper">
+                                <img src="assets/services/bulb.png" alt="bulb" />
                                 <h2 class="services__item-title">Inovative Ideas</h2>
                                 <p class="services__item-text">
                                     Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
@@ -78,8 +80,9 @@
                             </div>
                         </li>
                         <li class="services__item">
-                            <img src="assets/services/heart.png" alt="heart" />
+
                             <div class="service__item-wrapper">
+                                <img src="assets/services/heart.png" alt="heart" />
                                 <h2 class="services__item-title">Love Is The Answer</h2>
                                 <p class="services__item-text">
                                     Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
@@ -87,8 +90,9 @@
                             </div>
                         </li>
                         <li class="services__item">
-                            <img src="assets/services/phone.png" alt="phone" />
+
                             <div class="service__item-wrapper">
+                                <img src="assets/services/phone.png" alt="phone" />
                                 <h2 class="services__item-title">Responsive Layout</h2>
                                 <p class="services__item-text">
                                     Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.
@@ -96,8 +100,9 @@
                             </div>
                         </li>
                         <li class="services__item">
-                            <img src="assets/services/bubble.png" alt="bubble" />
+
                             <div class="service__item-wrapper">
+                                <img src="assets/services/bubble.png" alt="bubble" />
                                 <h2 class="services__item-title">24 / 7 Support</h2>
                                 <p class="services__item-text">
                                     Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .
@@ -105,8 +110,9 @@
                             </div>
                         </li>
                         <li class="services__item">
-                            <img src="assets/services/star.png" alt="star" />
+
                             <div class="service__item-wrapper">
+                                <img src="assets/services/star.png" alt="star" />
                                 <h2 class="services__item-title">Feel Like A Star</h2>
                                 <p class="services__item-text">
                                     Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
@@ -131,129 +137,22 @@
                     <a class="portfolio__tag" data-filter='art'>Artwork</a>
                 </div>
                 <div class="portfolio__images">
-                    <img src="assets/portfolio/ship.png" class="web" alt="" />
-                    <img src="assets/portfolio/girl.png" class="art" alt="" />
-                    <img src="assets/portfolio/city.png" class="web" alt="" />
-                    <img src="assets/portfolio/titan.png" class="art" alt="" />
-                    <img src="assets/portfolio/rabbit.png" class="graphic" alt="" />
-                    <img src="assets/portfolio/sdk.png" class="web" alt="" />
-                    <img src="assets/portfolio/toys.png" class="graphic" alt="" />
-                    <img src="assets/portfolio/birds.png" class="web" alt="" />
-                    <img src="assets/portfolio/castle.png" class="graphic" alt="" />
-                    <img src="assets/portfolio/text.png" class="graphic" alt="" />
-                    <img src="assets/portfolio/scary.png" class="graphic" alt="" />
-                    <img src="assets/portfolio/broken.png" class="art" alt="" />
+                    <img src="assets/portfolio/ship.png" class="card web" alt="" />
+                    <img src="assets/portfolio/girl.png" class="card art" alt="" />
+                    <img src="assets/portfolio/city.png" class="card web" alt="" />
+                    <img src="assets/portfolio/titan.png" class="card art" alt="" />
+                    <img src="assets/portfolio/rabbit.png" class="card graphic" alt="" />
+                    <img src="assets/portfolio/sdk.png" class="card web" alt="" />
+                    <img src="assets/portfolio/toys.png" class="card graphic" alt="" />
+                    <img src="assets/portfolio/birds.png" class="card web" alt="" />
+                    <img src="assets/portfolio/castle.png" class="card graphic" alt="" />
+                    <img src="assets/portfolio/text.png" class="card graphic" alt="" />
+                    <img src="assets/portfolio/scary.png" class="card art" alt="" />
+                    <img src="assets/portfolio/broken.png" class="card art" alt="" />
                 </div>
             </div>
         </section>
 
-        <section class="about-us">
-            <div class="wrapper">
-                <h2 class="about-us__title">About Us</h2>
-                <p class="about-us__description">
-                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
-                </p>
-                <div class="our-team">
-                    <div class="staff-info staff">
-                        <img src="assets/employees/adam.jpg" alt="" />
-                        <h3 class="staff__title">Adam Jensen</h3>
-                        <p class="staff__description">
-                            Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
-                        </p>
-                        <div class="social-contacts">
-                            <span class="icon-circle icon-circle_small">
-                <span class="ico ico_facebook"></span>
-                            </span>
-                            <span class="icon-circle icon-circle_small">
-                <span class="ico ico_google"></span>
-                            </span>
-                            <span class="icon-circle icon-circle_small">
-                <span class="ico ico_twitter"></span>
-                            </span>
-                            <span class="icon-circle icon-circle_small">
-                <span class="ico ico_linkedin"></span>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="staff-info staff">
-                        <img src="assets/employees/desmond.jpg" alt="" />
-                        <h3 class="staff__title">Desmond Miles</h3>
-                        <p class="staff__description">
-                            Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
-                        </p>
-                        <div class="social-contacts">
-                            <span class="icon-circle icon-circle_small">
-                <span class="ico ico_facebook"></span>
-                            </span>
-                            <span class="icon-circle icon-circle_small">
-                <span class="ico ico_google"></span>
-                            </span>
-                            <span class="icon-circle icon-circle_small">
-                <span class="ico ico_twitter"></span>
-                            </span>
-                            <span class="icon-circle icon-circle_small">
-                <span class="ico ico_linkedin"></span>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="staff-info staff">
-                        <img src="assets/employees/scolara.jpg" alt="" />
-                        <h3 class="staff__title">Scolara Visari</h3>
-                        <p class="staff__description">
-                            Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
-                        </p>
-                        <div class="social-contacts">
-                            <span class="icon-circle icon-circle_small">
-                <span class="ico ico_facebook"></span>
-                            </span>
-                            <span class="icon-circle icon-circle_small">
-                <span class="ico ico_google"></span>
-                            </span>
-                            <span class="icon-circle icon-circle_small">
-                <span class="ico ico_twitter"></span>
-                            </span>
-                            <span class="icon-circle icon-circle_small">
-                <span class="ico ico_linkedin"></span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contacts">
-            <div class="wrapper">
-                <h2 class="contacts__title">Get a Quote</h2>
-                <p class="contacts__description">
-                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
-                </p>
-                <div class="contacts__form form">
-                    <div class="form__info">
-                        <input type="text" placeholder="Name (Required)" required />
-                        <input type="email" placeholder="Email (Required)" required />
-                        <input type="text" placeholder="Subject" />
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
-                    </div>
-                    <div class="contacts__information">
-                        <h2 class="contacts__information-title">Contact Information</h2>
-                        <p class="contacts__information-description">
-                            Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
-                        </p>
-                        <div class="call-us">
-                            <a href="#" class="contacts__info contacts__info-city">
-                Elm St. 14/05 Lost City
-              </a>
-                            <a class="contacts__info contacts__info-telephone" href="tel:03528 331 86 35"> 03528 331 86
-                35</a>
-                            <a class="contacts__info contacts__info-email" href="mailto:info@singolo.com">
-                info@singolo.com</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer class="footer">

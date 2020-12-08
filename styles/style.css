@@ -21,12 +21,14 @@ html {
 }
 
 img {
+    max-width: 100%;
     height: auto;
 }
 
 .wrapper {
     margin: 0 auto;
-    max-width: 940px;
+    max-width: 1020px;
+    padding: 0 40px;
 }
 
 .header {
@@ -81,6 +83,10 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     line-height: 6px;
+}
+
+.header__button {
+    display: none;
 }
 
 .header__menu-link:hover {
@@ -164,7 +170,6 @@ img {
     display: flex;
     justify-content: flex-end;
     width: 300px;
-    position: relative;
     padding-bottom: 34px;
 }
 
@@ -172,7 +177,7 @@ img {
     position: absolute;
     width: 60px;
     height: 60px;
-    left: 0;
+    left: -80px;
 }
 
 .services__item-title {
@@ -194,6 +199,7 @@ img {
 
 .service__item-wrapper {
     width: 220px;
+    position: relative;
 }
 
 .portfolio {
@@ -227,6 +233,7 @@ img {
     font-size: 12px;
     line-height: 21px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .portfolio__tag:hover {
@@ -254,46 +261,6 @@ img {
 
 .portfolio__images img {
     padding-bottom: 18px;
-}
-
-.about-us {}
-
-.about-us__title {
-    color: #666d89;
-    font-size: 30px;
-    padding-top: 55px;
-    padding-bottom: 22px;
-}
-
-.about-us__description {
-    font-size: 18px;
-    line-height: 30px;
-    color: #767e9e;
-    padding-bottom: 43px;
-}
-
-.our-team {
-    display: flex;
-    justify-content: space-between;
-}
-
-.staff-info {
-    max-width: 300px;
-}
-
-.staff__title {
-    font-size: 18px;
-    line-height: 18px;
-    color: #666d89;
-    font-weight: 700;
-    padding-top: 15px;
-    padding-bottom: 10px;
-}
-
-.staff__description {
-    font-size: 12px;
-    line-height: 22px;
-    color: #767e9e;
 }
 
 .social-contacts {
@@ -355,144 +322,6 @@ img {
     fill: aqua;
 }
 
-.contacts {
-    background-color: #f06c64;
-    padding-top: 75px;
-}
-
-.contacts__title {
-    font-size: 30px;
-    line-height: 18px;
-    color: #f0d8d9;
-    padding-bottom: 26px;
-}
-
-.contacts__description {
-    font-size: 18px;
-    line-height: 30px;
-    color: #f0d8d9;
-    padding-bottom: 45px;
-}
-
-.contacts__form {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 73px;
-}
-
-.form__info {
-    width: 620px;
-    display: flex;
-    flex-direction: column;
-}
-
-.form__info input {
-    width: 100%;
-    height: 38px;
-    margin-bottom: 16px;
-    background-color: #d6564f;
-    border: none;
-    border-radius: 5px;
-    padding-left: 15px;
-}
-
-.form__info input:focus {
-    background-color: #2d303a;
-}
-
-.form__info textarea {
-    padding-left: 15px;
-    padding-top: 7px;
-}
-
-.form__info input::placeholder {
-    color: #f48c8f;
-    font-size: 12px;
-    line-height: 21px;
-}
-
-.form__info textarea {
-    height: 202px;
-    background-color: #d6564f;
-    border: none;
-    border-radius: 5px;
-}
-
-.form__info textarea::placeholder {
-    color: #f48c8f;
-    font-size: 12px;
-    line-height: 21px;
-}
-
-.form__info textarea:focus {
-    background-color: #2d303a;
-}
-
-.contacts__information {
-    width: 300px;
-}
-
-.contacts__information-title {
-    font-size: 18px;
-    line-height: 18px;
-    color: #f0d8d9;
-}
-
-.contacts__info {
-    position: relative;
-}
-
-.contacts__info-city::before {
-    content: "";
-    position: absolute;
-    background-image: url("../assets/icons/contact-location.svg");
-    width: 7px;
-    height: 11px;
-    left: -19px;
-    top: 5px;
-}
-
-.contacts__info-telephone::before {
-    content: "";
-    position: absolute;
-    background-image: url("../assets/icons/contact-phone.svg");
-    width: 11px;
-    height: 11px;
-    left: -21px;
-    top: 5px;
-}
-
-.contacts__info-email::before {
-    content: "";
-    position: absolute;
-    background-image: url("../assets/icons/contact-mail.svg");
-    width: 11px;
-    height: 8px;
-    left: -22px;
-    top: 10px;
-}
-
-.contacts__information-description {
-    font-size: 12px;
-    line-height: 21px;
-    padding-top: 10px;
-    padding-bottom: 25px;
-    color: #f0d8d9;
-}
-
-.call-us {
-    display: flex;
-    flex-direction: column;
-    padding-left: 25px;
-}
-
-.call-us a {
-    font-size: 12px;
-    line-height: 21px;
-    color: #f0d8d9;
-    text-decoration: none;
-}
-
 .footer {
     background-color: #2d303a;
     height: 76px;
@@ -513,4 +342,93 @@ img {
 .footer__social-contacts {
     padding: 0;
     padding-top: 17px;
+}
+
+
+/* @media(max-width:920px) {
+    .services__list {
+        justify-content: flex-start;
+    }
+    .services__item {
+        justify-content: none;
+        margin-right: 53px;
+    }
+    .portfolio__images {
+        justify-content: flex-start;
+    }
+    .portfolio__images img {
+        margin-right: 20px;
+    }
+}
+*/
+
+@media(max-width:768px) {
+    .slider-phone--first {
+        width: 180px;
+        height: 363px;
+    }
+    .slider-phone--second {
+        width: 162px;
+        height: 344px;
+    }
+}
+
+@media(max-width:680px) {
+    .services__item {
+        width: 100%;
+        justify-content: center;
+    }
+    .service__item-wrapper {
+        margin-left: 80px;
+    }
+}
+
+@media(max-width:520px) {
+    .portfolio__images img {
+        width: 115px;
+    }
+    .header__menu {
+        display: none;
+    }
+    .header__inner {
+        justify-content: center;
+        position: relative;
+    }
+    .header__menu--open {
+        display: block;
+    }
+    .header__button {
+        display: block;
+        position: absolute;
+        left: 0;
+    }
+    .header__menu-list {
+        position: absolute;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: 180px;
+    }
+    .header__menu-list::before {
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, .8);
+        z-index: 1000;
+        opacity: 1;
+        transform: scale(0);
+        transition: opacity 0.5s;
+    }
+    .header__menu-item {
+        margin: 20px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+    }
 }
