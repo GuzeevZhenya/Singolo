@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
-    <title>Document</title>
+    <title>Singolo</title>
 </head>
 
 <body>
@@ -16,8 +16,8 @@
                     <a href="#">Singolo<span>*</span></a>
                 </div>
                 <button class="header__button header__button--open" type="button" aria-expanded="false">Кнопка</button>
-                <nav class="header__menu header__menu--open">
-                    <ul class="header__menu-list">
+                <nav class="header__menu">
+                    <ul class="header__menu-list header__menu-list--active">
                         <li class="header__menu-item header__menu-item--selected" href="#">
                             <a class="header__menu-link header__menu-link--selected" href="#">Home</a>
                         </li>
@@ -42,12 +42,18 @@
     <main>
         <section class="slider">
             <div class="wrapper">
-                <div class="slider__inner">
-                    <a href="#" class="slider__left slider"><img class="slider-phone--left" src="assets/slider/left.png" alt="chev" /></a>
-                    <a href="#" class="slider__left slider"><img class="slider-phone--right" src="assets/slider/right.png" alt="chev2" /></a>
-                    <img class="slider-phone--first" src="assets/slider/iphone-vertical.png" alt="iPhoneVertical" />
-                    <img class="slider-phone--second" src="assets/slider/iphone-horizontal.png" alt="iPhoneHorizontal" />
+                <div class="slider__inner infinity-slider">
+                    <div class="slider-div">
+                        <img class="slider-phone--first" src="assets/slider/iphone-vertical.png" alt="iPhoneVertical" />
+                        <img class="slider-phone--second" src="assets/slider/iphone-horizontal.png" alt="iPhoneHorizontal" />
+                    </div>
+                    <div class="slider-div slider-div--second">
+                        <img src="assets/slider/Slider.png">
+                    </div>
+                    <a href="#" class="slider__left slider btn-infinity-up"><img class="slider-phone--left" src="assets/slider/left.png" alt="chev" /></a>
+                    <a href="#" class="slider__left slider"><img class="slider-phone--right btn-infinity-down" src="assets/slider/right.png" alt="chev2" /></a>
                 </div>
+
             </div>
         </section>
 
