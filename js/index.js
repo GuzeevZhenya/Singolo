@@ -1,6 +1,7 @@
  function app() {
      const buttons = document.querySelectorAll('.portfolio__tag');
      const cards = document.querySelectorAll('.card');
+     const portfolioSelected = document.querySelector('.portfolio__select-type');
 
      function filter(category, items) {
          items.forEach(item => {
@@ -8,18 +9,29 @@
              const isShowAll = category.toLowerCase() === 'all';
              if (isItemFiltered && !isShowAll) {
                  item.classList.add('hide');
+
              } else {
                  item.classList.remove('hide');
              }
          });
      }
-
      buttons.forEach(button => {
-         button.addEventListener('click', () => {
+         button.addEventListener('click', (e) => {
              const currentCategory = button.dataset.filter;
              filter(currentCategory, cards);
          });
      });
+
+     //Добавление цвета для кнопки, при ее нажатии
+     portfolioSelected.addEventListener('click', function(e) {
+         let active = document.querySelector(".portfolio__tag--active");
+         if (e.target.classList.contains('portfolio__tag')) {
+             if (active) {
+                 active.classList.remove('portfolio__tag--active');
+             }
+             e.target.classList.add('portfolio__tag--active');
+         }
+     })
  }
 
  app();

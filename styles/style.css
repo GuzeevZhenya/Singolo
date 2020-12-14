@@ -6,6 +6,15 @@ html {
     display: none;
 }
 
+
+/* .selected-button {
+    background-color: red;
+} */
+
+.portfolio__tag--active {
+    background-color: #f06c64;
+}
+
 @font-face {
     font-family: Lato;
     src: url(../assets/fonts/Lato-Regular.ttf);
@@ -115,8 +124,7 @@ img {
 
 .slider-phone--first {
     position: absolute;
-    left: 73px;
-    top: 52px;
+    background-color: inherit;
 }
 
 .slider-phone--second {
@@ -371,16 +379,7 @@ img {
 }
 */
 
-@media(max-width:768px) {
-    .slider-phone--first {
-        width: 180px;
-        height: 363px;
-    }
-    .slider-phone--second {
-        width: 162px;
-        height: 344px;
-    }
-}
+@media(max-width:768px) {}
 
 @media(max-width:680px) {
     .services__item {
@@ -389,6 +388,9 @@ img {
     }
     .service__item-wrapper {
         margin-left: 80px;
+    }
+    .slider-div--first {
+        border-color: inherit;
     }
 }
 
