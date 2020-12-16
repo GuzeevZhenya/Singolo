@@ -110,18 +110,15 @@ img {
     color: #f06c64;
 }
 
-.slider {
-    height: 600px;
-}
-
 .slider__inner {
     position: relative;
-    max-width: 940px;
+    /* max-width: 940px; */
     margin: 0 auto;
 }
 
-
-/* Slider */
+.slider-div__first {
+    vertical-align: top;
+}
 
 .slider__inner {
     overflow: hidden;
@@ -130,10 +127,16 @@ img {
 .slider-track {
     display: flex;
     transition: .4s;
+    border-bottom: 6px solidd #f06c64;
 }
 
 .slider-item {
     position: relative;
+}
+
+.slider-phone--first {
+    height: 100%;
+    background-color: inherit;
 }
 
 .slider-phone--left {
