@@ -131,18 +131,23 @@ img {
 }
 
 .slider-item {
-    position: relative;
+    display: flex;
+    justify-content: space-around;
 }
 
 .slider-phone--first {
-    height: 100%;
-    background-color: inherit;
+    /* height: 100%; */
+    background: #648BF0;
 }
 
 .slider-phone--left {
     position: absolute;
     top: 240px;
     left: 20px;
+}
+
+.slider-image {
+    width: 70%;
 }
 
 .slider-phone--right {
@@ -265,7 +270,6 @@ img {
     max-width: 300px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 19px;
 }
 
 .portfolio__tag-selected {
@@ -280,13 +284,17 @@ img {
 }
 
 .portfolio__images img {
-    padding-bottom: 18px;
+    padding-top: 18px;
 }
 
 .social-contacts {
     display: flex;
     max-width: 300px;
     padding: 23px 0 67px 2px;
+}
+
+.icon-circle:hover {
+    background-color: #f06c64;
 }
 
 .icon-circle_small:hover {
