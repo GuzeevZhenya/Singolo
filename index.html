@@ -18,8 +18,8 @@
                 <button class="header__button" type="button" aria-expanded="false"></button>
                 <nav class="header__menu">
                     <ul class="header__menu-list header__menu-list--active">
-                        <li class="header__menu-item header__menu-item--selected" href="#">
-                            <a class="header__menu-link header__menu-link--selected" id="#home" href="#">Home</a>
+                        <li class="header__menu-item" href="#">
+                            <a class="header__menu-link header__menu-link--selected" href="#">Home</a>
                         </li>
                         <li class="header__menu-item" href="#">
                             <a class="header__menu-link" href="#services">Services</a>
@@ -43,15 +43,18 @@
         <section class="slider">
             <div class="wrapper">
                 <div class="slider__inner infinity-slider">
-                    <div class="slider-div slider-div--first">
-                        <img class="slider-phone--first" src="assets/slider/Slide-1.png" alt="iPhoneVertical" />
-                    </div>
-                    <div class="slider-div slider-div--second">
-                        <img src="assets/slider/Slider.png">
+                    <div class="slider-track">
+                        <div class="slider-div slider-div--first">
+                            <img class="slider__image slider-phone--first" src="assets/slider/Slider-red.png" alt="iPhoneVertical" />
+                        </div>
+                        <div class="slider-div slider-div--second">
+                            <img class="slider__image slider-phone--second" src="assets/slider/Slider-blue.png">
+                        </div>
                     </div>
                     <a href="#" class="slider__left slider btn-infinity-up"><img class="slider-phone--left" src="assets/slider/left.png" alt="chev" /></a>
-                    <a href="#" class="slider__left slider"><img class="slider-phone--right btn-infinity-down" src="assets/slider/right.png" alt="chev2" /></a>
+                    <a href="#" class="slider__right slider btn-infinity-down"><img class="slider-phone--right" src="assets/slider/right.png" alt="chev2" /></a>
                 </div>
+
 
             </div>
         </section>
@@ -124,6 +127,8 @@
             </div>
         </section>
 
+
+
         <section class="portfolio" id="portfolio">
             <div class="wrapper">
                 <h2 class="portfolio__title">Portfolio</h2>
@@ -163,16 +168,16 @@
                 </div>
                 <div class="social-contacts footer__social-contacts" id="contact">
                     <span class="icon-circle icon-circle_small">
-            <span class="ico ico_facebook"></span>
+                        <span class="ico ico_facebook"></span>
                     </span>
                     <span class="icon-circle icon-circle_small">
-            <span class="ico ico_google"></span>
+                        <span class="ico ico_google"></span>
                     </span>
                     <span class="icon-circle icon-circle_small">
-            <span class="ico ico_twitter"></span>
+                        <span class="ico ico_twitter"></span>
                     </span>
                     <span class="icon-circle icon-circle_small">
-            <span class="ico ico_linkedin"></span>
+                        <span class="ico ico_linkedin"></span>
                     </span>
                 </div>
             </div>
