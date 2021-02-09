@@ -37,6 +37,18 @@ function app() {
 
 app();
 
+//Скрывает картинки, если их больше 12
+function photoHidden() {
+    let images = document.querySelectorAll(".portfolio__images img");
+    for (let i = 0; i < images.length; i++) {
+        if (i >= 12) {
+            images[i].style.display = "none";
+        }
+    }
+}
+
+photoHidden();
+
 function headerSelecter() {
     const menuList = document.querySelector('.header__menu');
     menuList.addEventListener('click', function(e) {
@@ -132,26 +144,35 @@ const imgs = document.getElementById('imgs');
 const img = document.querySelectorAll('#imgs .slider__image');
 const buttonLeft = document.querySelector(".slider__left");
 const buttonRight = document.querySelector(".slider__right");
-
-
 let idx = 0;
 
-buttonLeft.addEventListener('click', rightClick);
-buttonRight.addEventListener('click', leftClick);
+
+buttonLeft.addEventListener('click', leftClick);
+buttonRight.addEventListener('click', rightClick);
+
+function leftClick() {
+    idx--;
+    if (idx < 0) {
+        idx = img.length - 1;
+    }
+
+    imgs.style.transform = `translateX(${-idx * 1020}px)`;
+}
 
 function rightClick() {
     idx++;
     if (idx > img.length - 1) {
         idx = 0;
     }
-    imgs.style.transform = `translateX(${-idx * 1020}px)`;
-
+    imgs.style.transform = `translateX(${-idx*1020}px)`;
 }
 
-function leftClick() {
-    idx--;
-    if (idx > img.length + 1) {
-        idx = 0;
+//Прокрутка хедера 
+window.onscroll = function showHeader() {
+    let header = document.querySelector('.header');
+    if (window.pageYOffset > 200) {
+        header.classList.add('header__fixed');
+    } else {
+        header.classList.remove('header__fixed');
     }
-    imgs.style.transform = `translateX(${idx * 1020}px)`;
 }

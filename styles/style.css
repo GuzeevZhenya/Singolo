@@ -49,6 +49,25 @@ img {
     border-bottom: 6px solid #323746;
 }
 
+.header__fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+    animation-name: show_header;
+    animation-duration: 1s;
+}
+
+@keyframes show_header {
+    0% {
+        opacity: 0;
+        top: -70px;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
 .logo {
     font-size: 25px;
     color: #ffffff;
@@ -234,6 +253,7 @@ img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .portfolio__images img {
@@ -372,6 +392,9 @@ img {
     position: absolute;
     z-index: 1;
     top: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .slider-phone--left {
@@ -379,7 +402,7 @@ img {
 }
 
 .slider-phone--right {
-    padding: 0 auto 20px;
+    padding: 0 20px;
 }
 
 @media(max-width:768px) {
