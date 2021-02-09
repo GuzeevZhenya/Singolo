@@ -260,6 +260,10 @@ img {
     padding-top: 18px;
 }
 
+img:nth-child(12)~img {
+    display: none;
+}
+
 .social-contacts {
     display: flex;
     max-width: 300px;

@@ -37,17 +37,17 @@ function app() {
 
 app();
 
-//Скрывает картинки, если их больше 12
-function photoHidden() {
-    let images = document.querySelectorAll(".portfolio__images img");
-    for (let i = 0; i < images.length; i++) {
-        if (i >= 12) {
-            images[i].style.display = "none";
-        }
-    }
-}
+// //Скрывает картинки, если их больше 12
+// function photoHidden() {
+//     let images = document.querySelectorAll(".portfolio__images img");
+//     for (let i = 0; i < images.length; i++) {
+//         if (i >= 12) {
+//             images[i].style.display = "none";
+//         }
+//     }
+// }
 
-photoHidden();
+// photoHidden();
 
 function headerSelecter() {
     const menuList = document.querySelector('.header__menu');
