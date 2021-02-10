@@ -1,5 +1,6 @@
 html {
     font-family: "Lato", sans-serif;
+    scroll-behavior: smooth;
 }
 
 .hide {
@@ -371,8 +372,7 @@ img:nth-child(12)~img {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     margin: 0 auto;
-    width: 1020px;
-    height: 594px;
+    max-width: 1020px;
     position: relative;
 }
 
@@ -381,24 +381,30 @@ img:nth-child(12)~img {
 }
 
 .slider__image {
-    object-fit: cover;
-    height: 600px;
-    width: 2000px;
+    /* object-fit: cover; */
+    /* height: 600px;
+        width: 2000px; */
 }
 
 .image-container {
     display: flex;
+    height: 100%;
+    width: 100%;
     transition: transform 0.5s linear;
     transform: translateX(0);
 }
 
 .carousel__buttons {
-    position: absolute;
+    /* position: absolute; */
     z-index: 1;
-    top: 250px;
+    /* top: 250px; */
     width: 100%;
     display: flex;
+    position: absolute;
     justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
 .slider-phone--left {
@@ -494,7 +500,14 @@ img:nth-child(12)~img {
     }
 }
 
-@media(max-width:360px) {
+@media(max-width:440px) {
+    .copyright__text {
+        padding-top: 20px;
+        line-height: 16px;
+    }
+}
+
+@media(max-width: 360px) {
     .portfolio__tag {
         font-size: 10px;
     }
