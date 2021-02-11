@@ -48,25 +48,12 @@ img {
 .header {
     background-color: #2d303a;
     border-bottom: 6px solid #323746;
-}
-
-.header__fixed {
     position: fixed;
     width: 100%;
     z-index: 999999;
     animation-name: show_header;
     animation-duration: 1s;
-}
-
-@keyframes show_header {
-    0% {
-        opacity: 0;
-        top: -70px;
-    }
-    100% {
-        top: 0;
-        opacity: 1;
-    }
+     
 }
 
 .logo {
@@ -374,6 +361,8 @@ img:nth-child(12)~img {
     margin: 0 auto;
     max-width: 1020px;
     position: relative;
+    padding-top:94px;
+    
 }
 
 .image-container {

@@ -44,8 +44,8 @@ function headerSelecter() {
             if (active) {
                 active.classList.remove('header__menu-link--selected');
             }
+            e.target.classList.add('header__menu-link--selected');
             menuList.classList.toggle('header__menu--open');
-
         }
     })
 }
@@ -76,6 +76,7 @@ const img = document.querySelectorAll('#imgs .slider__image');
 const buttonLeft = document.querySelector(".slider__left");
 const buttonRight = document.querySelector(".slider__right");
 const screenWidth = window.screen.width;
+const screenHeight = window.screen.height;
 let idx = 0;
 
 
@@ -88,11 +89,14 @@ function leftClick() {
         idx = img.length - 1;
     }
 
-    if (screenWidth > 1020) {
+    if (screenWidth > 1020 || screenHeight > 1020) {
         imgs.style.transform = `translateX(${-idx* 1020 }px)`;
     } else {
-        imgs.style.transform = `translateX(${-idx* screenWidth}px)`;
+        imgs.style.transform = `translateX(${-idx * screenWidth}px)`;
     }
+    console.log(screenWidth)
+    console.log(screenHeight)
+
 }
 
 function rightClick() {
@@ -100,20 +104,23 @@ function rightClick() {
     if (idx > img.length - 1) {
         idx = 0;
     }
-    if (screenWidth > 1020) {
+    if (screenWidth > 1020 || screenHeight > 1020) {
         imgs.style.transform = `translateX(${-idx* 1020 }px)`;
     } else {
-        imgs.style.transform = `translateX(${-idx* screenWidth }px)`;
+        imgs.style.transform = `translateX(${-idx * screenWidth }px)`;
+
     }
+    console.log(screenWidth)
+    console.log(screenHeight)
 
 }
 
-//Прокрутка хедера 
-window.onscroll = function showHeader() {
-    let header = document.querySelector('.header');
-    if (window.pageYOffset > 200) {
-        header.classList.add('header__fixed');
-    } else {
-        header.classList.remove('header__fixed');
-    }
-}
+// //Прокрутка хедера 
+// window.onscroll = function showHeader() {
+//     let header = document.querySelector('.header');
+//     if (window.pageYOffset > 10) {
+//         header.classList.add('header__fixed');
+//     } else {
+//         header.classList.remove('header__fixed');
+//     }
+// }
