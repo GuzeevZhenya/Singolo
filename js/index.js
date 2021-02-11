@@ -94,9 +94,6 @@ function leftClick() {
     } else {
         imgs.style.transform = `translateX(${-idx * screenWidth}px)`;
     }
-    console.log(screenWidth)
-    console.log(screenHeight)
-
 }
 
 function rightClick() {
@@ -108,11 +105,7 @@ function rightClick() {
         imgs.style.transform = `translateX(${-idx* 1020 }px)`;
     } else {
         imgs.style.transform = `translateX(${-idx * screenWidth }px)`;
-
     }
-    console.log(screenWidth)
-    console.log(screenHeight)
-
 }
 
 // //Прокрутка хедера 
