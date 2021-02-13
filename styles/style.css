@@ -372,13 +372,18 @@ img {
     position: absolute;
     z-index: 1;
     top: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .slider-phone--left {
+
     padding: 0 20px;
 }
 
 .slider-phone--right {
+
     padding: 0 auto 20px;
 }
 
@@ -386,6 +391,7 @@ img {
     .portfolio__images img {
         margin: 0 20px;
     }
+
     .portfolio__images {
         justify-content: center;
     }
@@ -396,9 +402,11 @@ img {
         width: 100%;
         justify-content: center;
     }
+
     .service__item-wrapper {
         margin-left: 80px;
     }
+
     .slider-div--first {
         border-color: inherit;
     }
@@ -409,13 +417,16 @@ img {
         display: none;
         width: 0;
     }
+
     .header__inner {
         justify-content: center;
         position: relative;
     }
+
     .header__menu--open {
         display: block;
     }
+
     .header__button {
         display: block;
         position: absolute;
@@ -427,9 +438,11 @@ img {
         outline: none;
         background: url("../assets/burger/Burger-menu-icon.png");
     }
+
     .header__button--open {
         background: url("../assets/burger/Burger-menu-icon (1).png");
     }
+
     .header__menu-list {
         position: absolute;
         left: 0;
@@ -438,6 +451,7 @@ img {
         justify-content: flex-start;
         padding-top: 232px;
     }
+
     .header__menu-item {
         margin-bottom: 27px;
         margin-left: 71px;
@@ -447,6 +461,7 @@ img {
         font-size: 24px;
         line-height: 29px;
     }
+
     .header__menu-list--active {
         width: 80vw;
         height: 100vh;
@@ -455,6 +470,7 @@ img {
         top: 0;
         background-color: #2D303A;
     }
+
     .header__menu-list--active::after {
         content: "";
         position: absolute;

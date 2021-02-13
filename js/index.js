@@ -145,12 +145,11 @@ function rightClick() {
         idx = 0;
     }
     imgs.style.transform = `translateX(${-idx * 1020}px)`;
-
 }
 
 function leftClick() {
     idx--;
-    if (idx > img.length + 1) {
+    if (idx > img.length - 1) {
         idx = 0;
     }
     imgs.style.transform = `translateX(${idx * 1020}px)`;
