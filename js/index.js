@@ -23,7 +23,7 @@ function app() {
     });
 
     //Добавление цвета для кнопки, при ее нажатии
-    portfolioSelected.addEventListener('click', function(e) {
+    portfolioSelected.addEventListener('click', function (e) {
         let active = document.querySelector(".portfolio__tag--active");
         if (e.target.classList.contains('portfolio__tag')) {
             if (active) {
@@ -38,7 +38,7 @@ app();
 
 function headerSelecter() {
     const menuList = document.querySelector('.header__menu');
-    menuList.addEventListener('click', function(e) {
+    menuList.addEventListener('click', function (e) {
         let active = document.querySelector(".header__menu-link--selected");
         if (e.target.classList.contains('header__menu-link')) {
             if (active) {
@@ -75,8 +75,10 @@ const imgs = document.getElementById('imgs');
 const img = document.querySelectorAll('#imgs .slider__image');
 const buttonLeft = document.querySelector(".slider__left");
 const buttonRight = document.querySelector(".slider__right");
+const carousel = document.querySelector('.carousel');
 const screenWidth = window.screen.width;
 const screenHeight = window.screen.height;
+
 let idx = 0;
 
 
@@ -94,6 +96,16 @@ function leftClick() {
     } else {
         imgs.style.transform = `translateX(${-idx * screenWidth}px)`;
     }
+    console.log(idx);
+    if (idx % 2 === 0) {
+        carousel.style.background = '#648cf0';
+        carousel.style.borderBottom = "6px solid #6470f0";
+
+    } else {
+        carousel.style.background = '#f06c64';
+        carousel.style.borderBottom = "6px solid #EA676B"
+
+    }
 }
 
 function rightClick() {
@@ -106,14 +118,29 @@ function rightClick() {
     } else {
         imgs.style.transform = `translateX(${-idx * screenWidth }px)`;
     }
+    if (idx % 2 === 0) {
+        carousel.style.background = '#648cf0';
+        carousel.style.borderBottom = "6px solid #6470f0";
+    } else {
+        carousel.style.background = '#f06c64';
+        carousel.style.borderBottom = "6px solid #EA676B"
+    }
+
 }
 
-// //Прокрутка хедера 
-// window.onscroll = function showHeader() {
-//     let header = document.querySelector('.header');
-//     if (window.pageYOffset > 10) {
-//         header.classList.add('header__fixed');
-//     } else {
-//         header.classList.remove('header__fixed');
-//     }
-// }
+window.addEventListener('scroll', () => {
+    let scrollDistance = window.scrollY;
+    console.log()
+
+    document.querySelectorAll('.section').forEach((el, i) => {
+        if (el.offsetTop - document.querySelector('.header__menu').clientHeight <= scrollDistance) {
+            document.querySelectorAll('.header__menu a').forEach((el) => {
+                if (el.classList.contains('header__menu-link--selected')) {
+                    el.classList.remove('header__menu-link--selected');
+                }
+            })
+            document.querySelectorAll('.header__menu li')[i].querySelector('a').classList.add('header__menu-link--selected');
+        }
+     
+    });
+})
