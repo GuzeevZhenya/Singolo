@@ -66,6 +66,12 @@ img {
     color: #ffffff;
 }
 
+.logo__header {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+}
+
 .logo span {
     color: #f06c64;
 }
@@ -121,9 +127,22 @@ img {
     border-bottom: 6px solid #ffffff;
 }
 
+.section {
+    position: relative;
+}
+
 .flag__services {
     padding-top: 67px;
     padding-bottom: 35px;
+}
+
+.flag__portfolio {
+    position: absolute;
+    top: -34px;
+}
+
+.flag__contact {
+    padding-top: 17px;
 }
 
 .services__title {
@@ -192,8 +211,8 @@ img {
 .portfolio {
     background-color: #2d303a;
     border-bottom: 6px solid #323746;
-    padding-top: 64px;
     padding-bottom: 55px;
+    padding-top: 64px;
 }
 
 .portfolio__title {
@@ -336,11 +355,32 @@ img:nth-child(12)~img {
 
 .footer__social-contacts {
     padding: 0;
-    padding-top: 17px;
 }
 
+
+/* @media(max-width:920px) {
+    .services__list {
+        justify-content: flex-start;
+    }
+    .services__item {
+        justify-content: none;
+        margin-right: 53px;
+    }
+    .portfolio__images {
+        justify-content: flex-start;
+    }
+    .portfolio__images img {
+        margin-right: 20px;
+    }
+}
+*/
+
 .carousel {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #648cf0;
+    border-bottom: "6px solid #6470f0";
+}
+
+.carousel__container {
     overflow: hidden;
     margin: 0 auto;
     max-width: 1020px;
@@ -356,7 +396,7 @@ img:nth-child(12)~img {
     display: flex;
     height: 100%;
     width: 100%;
-    transition: transform 0.5s linear;
+    /* transition: transform 0.5s linear; */
     transform: translateX(0);
 }
 
@@ -383,9 +423,21 @@ img:nth-child(12)~img {
 
 @media(max-width:768px) {
     .portfolio__images img {
-        margin: 0 20px;
+        max-width: 40%;
+        height: auto;
+        flex-wrap: nowrap;
+        margin: 0 10px;
+    }
+    img:nth-child(8)~img {
+        display: none;
     }
     .portfolio__images {
+        justify-content: center;
+    }
+    .footer__copyright {
+        display: none;
+    }
+    .footer__inner {
         justify-content: center;
     }
 }
