@@ -339,24 +339,6 @@ img:nth-child(12)~img {
     padding-top: 17px;
 }
 
-
-/* @media(max-width:920px) {
-    .services__list {
-        justify-content: flex-start;
-    }
-    .services__item {
-        justify-content: none;
-        margin-right: 53px;
-    }
-    .portfolio__images {
-        justify-content: flex-start;
-    }
-    .portfolio__images img {
-        margin-right: 20px;
-    }
-}
-*/
-
 .carousel {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     overflow: hidden;
@@ -368,12 +350,6 @@ img:nth-child(12)~img {
 
 .image-container {
     display: flex;
-}
-
-.slider__image {
-    /* object-fit: cover; */
-    /* height: 600px;
-        width: 2000px; */
 }
 
 .image-container {
