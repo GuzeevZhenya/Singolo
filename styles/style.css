@@ -125,6 +125,8 @@ img {
 .services {
     background-color: #f2f2f2;
     border-bottom: 6px solid #ffffff;
+    padding-top: 64px;
+    padding-bottom: 35px;
 }
 
 .section {
@@ -132,8 +134,10 @@ img {
 }
 
 .flag__services {
-    padding-top: 67px;
-    padding-bottom: 35px;
+    position: absolute;
+    top: -35px;
+    /* padding-top: 67px;
+    padding-bottom: 35px; */
 }
 
 .flag__portfolio {
@@ -443,6 +447,9 @@ img:nth-child(12)~img {
 }
 
 @media(max-width:680px) {
+    .carousel__buttons {
+        top: 60%;
+    }
     .services__item {
         width: 100%;
         justify-content: center;
@@ -479,7 +486,8 @@ img:nth-child(12)~img {
         background: url("../assets/burger/Burger-menu-icon.png");
     }
     .header__button--open {
-        background: url("../assets/burger/Burger-menu-icon (1).png");
+        background: url("../assets/burger/Burger-menu-icon.png");
+        transform: rotate(90deg);
     }
     .header__menu-list {
         position: absolute;
@@ -519,6 +527,9 @@ img:nth-child(12)~img {
 }
 
 @media(max-width:440px) {
+    .carousel__buttons {
+        top: 65%;
+    }
     .copyright__text {
         padding-top: 20px;
         line-height: 16px;
