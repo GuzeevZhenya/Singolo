@@ -201,6 +201,8 @@ img {
 
 .services__item-text {
     color: #767e9e;
+    height: 66px;
+    overflow: hidden;
     margin: 0;
     font-size: 12px;
     font-weight: 400;
@@ -354,7 +356,7 @@ img:nth-child(12)~img {
     font-size: 12px;
     line-height: 6px;
     color: #595f77;
-    padding-top: 35px;
+    padding-top: 10px;
 }
 
 .footer__social-contacts {
@@ -474,20 +476,23 @@ img:nth-child(12)~img {
     .header__menu--open {
         display: block;
     }
+    /* .header__menu--close {
+        transform: rotate(50deg);
+    } */
     .header__button {
         display: block;
         position: absolute;
         left: 0;
         z-index: 2000;
-        width: 25px;
+        width: 21px;
         height: 20px;
         border: none;
         outline: none;
         background: url("../assets/burger/Burger-menu-icon.png");
     }
     .header__button--open {
-        background: url("../assets/burger/Burger-menu-icon.png");
-        transform: rotate(90deg);
+        background: url('../assets/burger/Header\ \(1\).png')
+        /* transform: rotate(90deg); */
     }
     .header__menu-list {
         position: absolute;

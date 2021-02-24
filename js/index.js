@@ -36,16 +36,20 @@ function app() {
 
 app();
 
-function headerSelecter() {
+function headerSelecter(e) {
+    const headerButton = document.querySelector('.header__button');
+
     const menuList = document.querySelector('.header__menu');
     menuList.addEventListener('click', function(e) {
         let active = document.querySelector(".header__menu-link--selected");
         if (e.target.classList.contains('header__menu-link')) {
             if (active) {
                 active.classList.remove('header__menu-link--selected');
+
             }
             e.target.classList.add('header__menu-link--selected');
             menuList.classList.toggle('header__menu--open');
+            headerButton.classList.toggle('header__button--open');
         }
     })
 }
@@ -55,7 +59,7 @@ headerSelecter();
 
 //Popap
 function popap() {
-    const openMenuButton = document.querySelector('.header__button ');
+
     const menuButton = document.querySelector('.header__button');
     const menuList = document.querySelector('.header__menu');
 
@@ -81,7 +85,6 @@ const screenHeight = window.screen.height;
 
 let idx = 0;
 
-
 buttonLeft.addEventListener('click', leftClick);
 buttonRight.addEventListener('click', rightClick);
 
@@ -104,7 +107,6 @@ function leftClick() {
     } else {
         carousel.style.background = '#f06c64';
         carousel.style.borderBottom = "6px solid #EA676B"
-
     }
 }
 
