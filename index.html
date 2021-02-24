@@ -13,22 +13,19 @@
         <div class="wrapper">
             <div class="header__inner">
                 <div class="logo">
-                    <a href="#">Singolo<span>*</span></a>
+                    <h1 class="logo__header"><a href="#">Singolo<span>*</span></a></h1>
                 </div>
                 <button class="header__button" type="button" aria-expanded="false"></button>
                 <nav class="header__menu">
                     <ul class="header__menu-list header__menu-list--active">
-                        <li class="header__menu-item header__menu-item--selected" href="#">
-                            <a class="header__menu-link header__menu-link--selected" id="#home" href="#">Home</a>
+                        <li class="header__menu-item" href="#">
+                            <a class="header__menu-link header__menu-link--selected" href="#">Home</a>
                         </li>
                         <li class="header__menu-item" href="#">
                             <a class="header__menu-link" href="#services">Services</a>
                         </li>
                         <li class="header__menu-item" href="#">
                             <a class="header__menu-link" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="header__menu-item" href="#">
-                            <a class="header__menu-link" href="#about">About</a>
                         </li>
                         <li class="header__menu-item" href="#">
                             <a class="header__menu-link" href="#contact">Contact</a>
@@ -40,26 +37,30 @@
     </header>
 
     <main>
-        <section class="slider">
-            <div class="wrapper">
-                <div class="slider__inner infinity-slider">
-                    <div class="slider-div slider-div--first">
-                        <img class="slider-phone--first" src="assets/slider/Slide-1.png" alt="iPhoneVertical" />
-                    </div>
-                    <div class="slider-div slider-div--second">
-                        <img src="assets/slider/Slider.png">
-                    </div>
-                    <a href="#" class="slider__left slider btn-infinity-up"><img class="slider-phone--left" src="assets/slider/left.png" alt="chev" /></a>
-                    <a href="#" class="slider__left slider"><img class="slider-phone--right btn-infinity-down" src="assets/slider/right.png" alt="chev2" /></a>
-                </div>
+        <section class="section carousel">
+            <div class="carousel__container">
+                <div class="carousel__buttons">
+                    <a href="#" class="slider__left"><img class="slider-phone--left" src="assets/slider/left.png" alt="chev" /></a>
+                    <a href="#" class="slider__right"><img class="slider-phone--right" src="assets/slider/right.png" alt="chev2" /></a>
 
+                </div>
+                <div class="image-container" id='imgs'>
+                    <img class="slider__image slider-phone--first" src="assets/slider/Slider-red.png" alt="iPhoneVertical" />
+                    <img class="slider__image slider-phone--second" src="assets/slider/Slider-blue.png">
+                    <img class="slider__image slider-phone--first" src="assets/slider/Slider-red.png" alt="iPhoneVertical" />
+                    <img class="slider__image slider-phone--second" src="assets/slider/Slider-blue.png">
+                </div>
             </div>
         </section>
 
-        <section class="services">
+
+
+        <section class="section services">
+            <div class="flag__services" id="services">
+            </div>
             <div class="wrapper">
                 <div class="services__inner">
-                    <h1 class="services__title" id="services">Our Services</h1>
+                    <h2 class="services__title">Our Services</h2>
                     <p class="services__description">
                         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
                     </p>
@@ -124,7 +125,11 @@
             </div>
         </section>
 
-        <section class="portfolio" id="portfolio">
+
+
+        <section class="section portfolio">
+            <div class="flag__portfolio" id="portfolio">
+            </div>
             <div class="wrapper">
                 <h2 class="portfolio__title">Portfolio</h2>
                 <p class="portfolio__text">
@@ -149,13 +154,21 @@
                     <img src="assets/portfolio/text.png" class="card graphic" alt="" />
                     <img src="assets/portfolio/scary.png" class="card art" alt="" />
                     <img src="assets/portfolio/broken.png" class="card art" alt="" />
+                    <img src="assets/portfolio/broken.png" class="card art" alt="" />
+                    <img src="assets/portfolio/broken.png" class="card art" alt="" />
+                    <img src="assets/portfolio/broken.png" class="card art" alt="" />
+                    <img src="assets/portfolio/broken.png" class="card art" alt="" />
+                    <img src="assets/portfolio/broken.png" class="card art" alt="" />
+                    <img src="assets/portfolio/broken.png" class="card art" alt="" />
+                    <img src="assets/portfolio/broken.png" class="card art" alt="" />
                 </div>
             </div>
         </section>
-
     </main>
 
-    <footer class="footer">
+    <footer class="section footer">
+        <div class="flag__contact" id="contact">
+        </div>
         <div class="wrapper">
             <div class="footer__inner">
                 <div class="footer__copyright">
@@ -163,16 +176,16 @@
                 </div>
                 <div class="social-contacts footer__social-contacts" id="contact">
                     <span class="icon-circle icon-circle_small">
-            <span class="ico ico_facebook"></span>
+                        <span class="ico ico_facebook"></span>
                     </span>
                     <span class="icon-circle icon-circle_small">
-            <span class="ico ico_google"></span>
+                        <span class="ico ico_google"></span>
                     </span>
                     <span class="icon-circle icon-circle_small">
-            <span class="ico ico_twitter"></span>
+                        <span class="ico ico_twitter"></span>
                     </span>
                     <span class="icon-circle icon-circle_small">
-            <span class="ico ico_linkedin"></span>
+                        <span class="ico ico_linkedin"></span>
                     </span>
                 </div>
             </div>
