@@ -45,7 +45,6 @@ function headerSelecter(e) {
         if (e.target.classList.contains('header__menu-link')) {
             if (active) {
                 active.classList.remove('header__menu-link--selected');
-
             }
             e.target.classList.add('header__menu-link--selected');
             menuList.classList.toggle('header__menu--open');
@@ -103,10 +102,13 @@ function leftClick() {
     if (idx % 2 === 0) {
         carousel.style.background = '#648cf0';
         carousel.style.borderBottom = "6px solid #6470f0";
+        carousel.style.transition = 'background 0.4s linear';
 
     } else {
         carousel.style.background = '#f06c64';
         carousel.style.borderBottom = "6px solid #EA676B"
+        carousel.style.transition = 'background 0.4s linear';
+
     }
 }
 
@@ -123,9 +125,13 @@ function rightClick() {
     if (idx % 2 === 0) {
         carousel.style.background = '#648cf0';
         carousel.style.borderBottom = "6px solid #6470f0";
+        carousel.style.transition = 'background 0.4s linear';
+
     } else {
         carousel.style.background = '#f06c64';
         carousel.style.borderBottom = "6px solid #EA676B"
+        carousel.style.transition = 'background 0.4s linear';
+
     }
 
 }
